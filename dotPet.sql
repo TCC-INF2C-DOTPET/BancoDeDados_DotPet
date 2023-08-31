@@ -24,6 +24,7 @@ idade VARCHAR(20) NOT NULL,
 castrado CHAR(1) NOT NULL, 
 descricao VARCHAR(100) NOT NULL, 
 status_animal VARCHAR(8) NOT NULL,
+foto_animal VARBINARY(MAX) NOT NULL,
  
 PRIMARY KEY (id), 
 ) 
@@ -180,14 +181,14 @@ GO
 SELECT * FROM Animal 
 DELETE from Animal WHERE id=1; 
  
-INSERT INTO Animal VALUES ('gato porte medio','vira-lata','jubileu','cinza','medio','n','m','vacina de 
-raiva e contra PIF','5 anos','s','muito dócil','inativo') 
+INSERT INTO Animal VALUES ('gato porte medio','vira-lata','jubileu','cinza','medio','n','m','vacina de raiva e contra PIF','5 anos','s','muito dócil','inativo') 
 GO 
 INSERT INTO Animal VALUES ('cachorro porte pequeno','viralata','Bucky','marrom','pequeno','n','m','vacina de raiva e contra PIF','3 anos','s','muito dócil','ativo') 
 GO 
-INSERT INTO Animal VALUES ('cachorro porte medio','vira-lata','Floquinho','branco e 
-preto','medio','n','m','vacina de raiva e contra PIF','4 anos','s','muito dócil','inativo') 
+INSERT INTO Animal VALUES ('cachorro porte medio','vira-lata','Floquinho','branco e preto','medio','n','m','vacina de raiva e contra PIF','4 anos','s','muito dócil','inativo') 
 GO
+
+
 UPDATE
  Animal
 SET
@@ -198,7 +199,7 @@ WHERE
  
  
 SELECT * FROM Usuario 
-DELETE from Usuario WHERE id=4; 
+DELETE from Usuario WHERE id=3; 
  
 INSERT INTO Usuario VALUES ('Maria Antonia 
 Castro','mariacastro1@gmail.com','maria12345?','11987674532','12/09/1980') 
@@ -253,8 +254,8 @@ INSERT INTO Funcionario VALUES ('2','Miguel
 Batista','54787654345','12345622','m','01/03/1997','11923433442','mibatista@gmail.com','avenida 
 zelia','333','casa 2','97543100','parque dos camargos','barueri','SP','3333') 
 GO 
-INSERT INTO Funcionario VALUES ('7','Ana Julia Nunes 
-Melo','54798071889','12345622','f','18/12/20005','11960781793','anajulia@gmail.com','rua 
+INSERT INTO Funcionario VALUES ('4','Ana Julia Nunes 
+Melo','54798071889','12345622','f','18/12/2005','11960781793','anajulia@gmail.com','rua 
 regina','232','casa 3','06436100','parque dos camargos','barueri','SP','4444') 
 GO
  
@@ -273,7 +274,7 @@ GO
 SELECT * FROM Agenda 
 DELETE from Agenda WHERE id=2; 
  
-INSERT INTO Agenda VALUES ('ativo','2021/11/30','','4','1') 
+INSERT INTO Agenda VALUES ('ativo','2021/11/30','','2','1') 
 GO 
-INSERT INTO Agenda VALUES ('inativo','2022/01/12','','4','2') 
+INSERT INTO Agenda VALUES ('inativo','2022/01/12','','3','2') 
 GO 
